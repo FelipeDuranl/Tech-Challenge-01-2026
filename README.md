@@ -1,5 +1,10 @@
 # Tech-Challenge-01-2026
 
+## Link do video de demonstração
+
+<a href="https://youtu.be/pyBCIGB0OYs">Video</a>
+
+
 # Relatório Técnico
 
 ## 1. Estratégias de Pré-processamento
