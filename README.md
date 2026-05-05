@@ -9,9 +9,7 @@ O pré-processamento foi a etapa principal para garantir que o modelo não fosse
 ### Consolidação e Limpeza de Base de Dados
 Foram baixados 6 datasets diferentes do Kaggle. Através de uma análise de similaridade, observamos que alguns eram duplicados. Construimos uma  fontes únicas, resultando em um dataset inicial de 4.310 registros, que após a remoção de duplicatas, foi reduzido para 778 registros únicos.
 
-![Quantidade de Valores Zero por Coluna](image_4X+DDjAHwb/fkhLFTQfSIA==)
-
-![EMBEDDEDIMAGE](placeholder-0)
+<img width="940" height="519" alt="image" src="https://github.com/user-attachments/assets/ce1d650e-0d87-4c76-9bdb-bf8d6efeb9fc" />
 
 ### Tratamento de Valores Faltantes
 Identificamos que colunas como Glucose, BloodPressure, IMC, Insulin e SkinThickness continham valores "0", o que é clinicamente impossível.
@@ -21,24 +19,18 @@ Identificamos que colunas como Glucose, BloodPressure, IMC, Insulin e SkinThickn
 ### Imputação por Mediana
 Para não perder nosso dataset, substituímos os zeros por NaN e utilizamos o SimpleImputer com a estratégia de mediana, que substitui esses valores de zero para a mediana, ajudando a normalização do nosso dataset, resultando em um melhor treinamento do modelo e por fim seu diagnostico.
 
-![Distribuições após imputação](image_wLm81g1CJSAbum757ua+JQ==)
-
-![EMBEDDEDIMAGE](placeholder-1)
+<img width="940" height="520" alt="image" src="https://github.com/user-attachments/assets/deadf9d7-d75c-4d03-9c5d-c0bb9a7a6a19" />
 
 ### Controle de Outliers
 Analisamos que variáveis como Insulin e SkinThickness tinham valores extremos (máximos de 846 e 110, respectivamente). Aplicamos o **Capping**, limitando os valores para reduzir o ruído, estabilizando o desvio padrão da Insulina de 85.97 para 78.89, trazendo o valores mais para o centro.
 
-![Distribuição e Outliers](image_248P3WL2/0AThJZg/HPA7Q==)
+<img width="940" height="578" alt="image" src="https://github.com/user-attachments/assets/8ecbcabc-ed54-49c8-bc02-d4e5d583b5b1" />
 
-![EMBEDDEDIMAGE](placeholder-2)
 
 | Antes do capping | Depois do capping |
 |------------------|------------------|
-| ![](image_rYk6DjkfJ3DU4KUoTN2h3w==) | ![](image_w8V93Ymfglv4jpCaD/8WSg==) |
-
-![EMBEDDEDIMAGE](placeholder-3)
-
-![EMBEDDEDIMAGE](placeholder-4)
+| <img width="459" height="484" alt="image" src="https://github.com/user-attachments/assets/a9fe1e7c-d539-4aed-9157-ee99525a9062" /> | <img width="434" height="484" alt="image" src="https://github.com/user-attachments/assets/21a40c34-8b2d-4b8a-8a5d-d84fddef484d" />
+ |
 
 ---
 
@@ -63,20 +55,15 @@ A análise exploratória mostrou pontos para a interpretação clínica:
 ### Perfil de Distribuição
 Outcome apresenta um desbalanceamento de aproximadamente **1.86:1** ou seja, 65% sem diabetes e 35% com diabetes. Isso indica que o modelo deve ser avaliado com atenção ao **F1-Score**, para evitar falsos negativos e falsos positivos  em pacientes doentes.
 
-![Distribuição da Variável Alvo](image_3tb9Ly7QwH+Cv3baCFw+tg==)
+<img width="940" height="319" alt="image" src="https://github.com/user-attachments/assets/c3d249fd-e5f4-4160-ae29-4046d542bef5" />
 
-![EMBEDDEDIMAGE](placeholder-5)
 
 ### Correlações Clínicas
 Vimos que a **Glicose** e o **IMC** possuem distribuições que se deslocam para a direita no grupo positivo. A análise de correlação mostra como variáveis como idade e número de gestações impactam a probabilidade da doença.
 
-![Correlação](image_sbsK+q03XfrT4f5WumpQ6Q==)
+<img width="940" height="576" alt="image" src="https://github.com/user-attachments/assets/d26faaf2-a291-4550-8352-0361cd547999" />
 
-![EMBEDDEDIMAGE](placeholder-6)
-
-![Distribuição das Features](image_Vy0Liec8CJSntgb/+TiLFw==)
-
-![EMBEDDEDIMAGE](placeholder-7)
+<img width="940" height="533" alt="image" src="https://github.com/user-attachments/assets/dc0d997e-1482-40e4-9a21-3fcf8b0efbcb" />
 
 ---
 
