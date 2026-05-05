@@ -76,13 +76,11 @@ Utilizando _Feature Importance_, espera-se que a Glicose seja o preditor mais fo
 
 ### Comparação dos resultados com e sem validação cruzada
 
-<img width="826" height="640" alt="image" src="https://github.com/user-attachments/assets/4bb7a732-4327-4067-9546-975347f2bd78" />
+<img width="846" height="643" alt="image" src="https://github.com/user-attachments/assets/d308c029-caeb-4ae8-8ef0-8c626ff02cf3" />
 
 ### Comparação de modelos
 
 <img width="826" height="640" alt="image" src="https://github.com/user-attachments/assets/15f9c1e6-fe5c-42b5-a655-4e95ddd6bf87" />
-
-
 
 ## Conclusão
 
