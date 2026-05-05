@@ -2,7 +2,7 @@
 
 ## Link do video de demonstração
 
-<a href="https://youtu.be/pyBCIGB0OYs">Video</a>
+<a href="https://youtu.be/pyBCIGB0OYs" target="_blank">Video</a>
 
 
 # Relatório Técnico
